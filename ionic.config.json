@@ -1,0 +1,7 @@
+{
+  "name": "marketintent",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

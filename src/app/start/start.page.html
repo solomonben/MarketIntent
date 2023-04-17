@@ -1,0 +1,91 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="dark">MarketIntent Demo Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="tertiary">
+  <ion-row class="ion-margin-start">
+    <ion-col class="ion-margin-start">
+      <ion-text color="dark"><h1><b>Market Share & Sales</b></h1></ion-text>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-margin-start">
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            <ion-list lines="none">
+              <ion-item>
+                <ion-icon name="bar-chart" slot="start" color="secondary" size="large"></ion-icon>
+                <ion-text>
+                 <h4>U.S. Spirits Industry by Segment | Revenue</h4>
+                </ion-text>
+              </ion-item>
+            </ion-list>
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-text color="dark">
+                <b>Suppliers Sales (in Billion U.S. Dollars)</b>
+              </ion-text>
+              <br>
+              <canvas id="barChart" width="200" height="100"></canvas>
+            </ion-col>
+          </ion-row>
+          
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+    <ion-col>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>
+            <ion-list lines="none">
+              <ion-item>
+                <ion-icon name="pie-chart" slot="start" color="secondary" size="large"></ion-icon>
+                <ion-text>
+                 <h4> U.S. Spirits Industry by Segment | Trends</h4>
+                </ion-text>
+              </ion-item>
+            </ion-list>
+          </ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-row>
+            <ion-col colSpan="8" class="ion-text-center">
+              <ion-text color="dark">
+                <b>Spirits by Price Category (in Billion U.S. Dollars)</b>
+              </ion-text>
+              <ion-text class="ion-no-margin">
+                Sum of the Product Category
+              </ion-text>
+              <canvas id="percentageChart" width="50%" height="50%"></canvas>
+              
+              
+            </ion-col>
+            <ion-col colSpan="4">
+              <ion-text color="dark">
+                <b>Drivers of Industry Growth</b>
+              </ion-text>
+              
+              <br>
+              <canvas id="pieChart" width="50%" height="50%"></canvas>
+            </ion-col>
+          </ion-row>
+          
+        </ion-card-content>
+      </ion-card>
+      
+    </ion-col>
+  </ion-row>
+</ion-content>
